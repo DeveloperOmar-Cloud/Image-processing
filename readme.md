@@ -13,5 +13,5 @@ This project is for resizing and uploading images using sharp with multer.
 ---
 
 ## How to run tests
-go to Imageprocessing/backend
-run commands seen in the package.json file of the backend
+- go to Imageprocessing/backend
+- run commands seen in the package.json file of the backend
