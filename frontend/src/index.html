@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Upload a file</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./styles/styles.css">
+    </head>
+    <body>
+    <!--[if lt IE 7]>
+        <p class="browsehappy">You're using an outdated browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <h2>Upload New Image</h2>
+    <form id="uploadForm">
+        <label>Image (JPG only):
+            <input type="file" id="fileInput" accept=".jpg" />
+        </label>
+
+        <label>Filename:
+            <input type="text" id="filenameInput" />
+        </label>
+
+        <label>Width:
+            <input type="number" id="uploadWidthInput" />
+        </label>
+
+        <label>Height:
+            <input type="number" id="uploadHeightInput" />
+        </label>
+
+        <button type="submit">Upload</button>
+    </form>
+
+    <h2>Image Gallery</h2>
+    <div id="gallery"></div>
+
+    <h2>Resize selected image</h2>
+        <p>Selected: <span id="selectedImageName">None</span></p>
+        <form id="resizeForm">
+        <input type="number" id="resizeWidthInput" placeholder="Width" />
+        <input type="number" id="resizeHeightInput" placeholder="Height" />
+        <button type="submit">Get Resized URL</button>
+    </form>
+    <p>Image URL: <span id="resizedImageUrl">None</span></p>
+
+    <script src="Javascript/script.js" defer></script>
+</body>
+
+</html>
